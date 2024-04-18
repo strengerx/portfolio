@@ -14,7 +14,7 @@ const Header = () => {
                             <li><a className=" lowercase text-slate-500" href="">my works</a></li>
                         </ul>
                     </div>
-                    <a className="font-jose px-3 py-1 capitalize font-semibold bg-blue-700 text-slate-100" href="">let&apos;s chat</a>
+                    <a className="font-jose px-3 py-1 capitalize bg-blue-700 text-slate-100" href="">let&apos;s chat</a>
                 </nav>
             </div>
         </header>
