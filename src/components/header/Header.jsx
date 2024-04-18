@@ -1,16 +1,21 @@
 import "./header.css"
+import logo from "../../assets/bh.png"
 
 const Header = () => {
     return (<>
-        <header className="w-full h-auto sticky top-0">
+        <header id="header" className="w-full h-auto sticky top-0 z-50">
             <div className="w-min/90 m-auto flex justify-between items-center h-16">
-                <a href="">bh</a>
-                <ul className="flex gap-4">
-                    <li><a href="">home</a></li>
-                    <li><a href="">skills</a></li>
-                    <li><a href="">projects</a></li>
-                    <li><a href="">contact</a></li>
-                </ul>
+                <a href=""><img className="w-[46px]" src={logo} alt="" /></a>
+                <nav className="flex gap-5 items-center">
+                    <div className="hidden md:block">
+                        <ul className="flex gap-5 font-proza">
+                            <li><a className=" lowercase text-slate-500" href="#header">home</a></li>
+                            <li><a className=" lowercase text-slate-500" href="">about me</a></li>
+                            <li><a className=" lowercase text-slate-500" href="">my works</a></li>
+                        </ul>
+                    </div>
+                    <a className="font-jose px-3 py-1 capitalize font-semibold bg-blue-700 text-slate-100" href="">let&apos;s chat</a>
+                </nav>
             </div>
         </header>
     </>)
