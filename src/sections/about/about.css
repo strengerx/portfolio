@@ -1,0 +1,4 @@
+.about-link:hover span {
+    padding-left: 20px;
+    transition: padding .5s;
+}

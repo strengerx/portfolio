@@ -8,10 +8,10 @@ const Header = () => {
                 <a href=""><img className="w-[46px]" src={logo} alt="" /></a>
                 <nav className="flex gap-5 items-center">
                     <div className="hidden md:block">
-                        <ul className="flex gap-5 font-proza">
-                            <li><a className=" lowercase text-slate-500" href="#header">home</a></li>
-                            <li><a className=" lowercase text-slate-500" href="">about me</a></li>
-                            <li><a className=" lowercase text-slate-500" href="">my works</a></li>
+                        <ul className="flex gap-5 font-jose">
+                            <li><a className="lowercase text-lg text-slate-500" href="#header">home</a></li>
+                            <li><a className="lowercase text-lg text-slate-500" href="">about me</a></li>
+                            <li><a className="lowercase text-lg text-slate-500" href="">my works</a></li>
                         </ul>
                     </div>
                     <a className="font-jose px-3 py-1 capitalize bg-blue-700 text-slate-100" href="">let&apos;s chat</a>
