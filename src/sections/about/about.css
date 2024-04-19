@@ -1,4 +1,10 @@
 .about-link:hover span {
-    padding-left: 20px;
-    transition: padding .5s;
+    animation: moveArrow .8s ease-in-out infinite;
+    /* transition: padding .5s; */
+}
+
+@keyframes moveArrow {
+    to {
+        padding-left: 20px;
+    }
 }

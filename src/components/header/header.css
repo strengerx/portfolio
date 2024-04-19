@@ -1,0 +1,16 @@
+#toggle-btn:hover {
+    background-color: #1e293b;
+    transition: .2s ease-in;
+}
+
+#toggle-btn::before,
+#toggle-btn::after {
+    transition: .2s ease-in;
+}
+
+#toggle-btn:hover::after,
+#toggle-btn:hover::before {
+    width: 20px;
+    transform-origin: center;
+    background-color: #e2e8f0;
+}
