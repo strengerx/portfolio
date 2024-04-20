@@ -14,7 +14,8 @@ export default {
         "min/90": "min(90%,1200px)",
         "min/80": "min(80%,1200px)"
       }, height: {
-        "svh/64": "calc(100svh - 64px)"
+        "svh/64": "calc(100svh - 64px)",
+        "scr/80": "calc(100svh - 80px)"
       }
     },
   },

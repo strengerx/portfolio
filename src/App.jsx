@@ -16,14 +16,13 @@ function App() {
 
   document.getElementById("root").classList.add("bg-slate-200")
 
-
   return (<>
     <ToggleContextProvider.Provider value={{ toggle, toggleSideBar }}>
       <Header />
+      <Sidebar />
       <Hero />
       <About />
       <Footer />
-      <Sidebar />
     </ToggleContextProvider.Provider>
   </>)
 }
