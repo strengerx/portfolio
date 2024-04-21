@@ -19,3 +19,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #0369a1;
 }
+
+body {
+    cursor: none;
+}
