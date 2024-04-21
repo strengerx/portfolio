@@ -6,8 +6,9 @@ import Sidebar from './components/sidebar/Sidebar'
 import ToggleContextProvider from './context/ToggleContextProvider'
 import About from './sections/about/About'
 import Hero from './sections/hero/Hero'
-import Skills from './sections/skills/Skills'
+// import Skills from './sections/skills/Skills'
 import Cursor from './components/cursor/Cursor'
+import Projects from './sections/projects/Projects'
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
       <Sidebar />
       <Hero />
       <About />
-      <Skills />
+      {/* <Skills /> */}
+      <Projects />
       <Footer />
     </ToggleContextProvider.Provider>
   </>)
