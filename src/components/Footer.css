@@ -1,0 +1,23 @@
+.footer {
+  padding-block: 2rem;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--ff-mono);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.footer-inner a {
+  color: var(--text-dim);
+  transition: color 0.15s ease;
+}
+
+.footer-inner a:hover {
+  color: var(--accent);
+}
