@@ -3,7 +3,7 @@ export const profile = {
   handle: "strengerx",
   role: "Full-Stack Web Developer",
   tagline:
-    "I build backend systems and the interfaces that sit on top of them — authentication, APIs, real-time data — using Node.js, React and PHP.",
+    "I build reliable web applications and backend systems — from authentication and APIs to real-time data and the interfaces that sit on top of them.",
   location: "Kolkata, India",
   email: "bidyut.hrz74@gmail.com",
   github: "https://github.com/strengerx",
@@ -13,41 +13,51 @@ export const profile = {
 export const nav = [
   { id: "about", label: "About", index: "01" },
   { id: "skills", label: "Skills", index: "02" },
-  { id: "projects", label: "Projects", index: "03" },
-  { id: "contact", label: "Contact", index: "04" },
+  { id: "experience", label: "Experience", index: "03" },
+  { id: "projects", label: "Projects", index: "04" },
+  { id: "contact", label: "Contact", index: "05" },
 ];
 
 export const about = {
   paragraphs: [
-    "I'm a full-stack developer working across both ends of the stack — Node.js and PHP on the backend, React and TypeScript on the frontend. Most of what I build starts with a real, working system rather than a static layout: authentication flows, validated APIs, database schemas, and the admin interfaces that sit on top of them.",
-    "I'm particularly interested in the engineering decisions behind an application — how auth and sessions are handled, how data is validated and modeled, how a service stays maintainable as it grows — rather than just how a page looks. Recent work includes JWT-based auth services, a rate-limited B2B API with OpenAPI docs, and a Node.js backend with Socket.IO for real-time device and activity tracking.",
+    "I'm a full-stack developer working across both ends of the stack — Node.js and PHP on the backend, React and TypeScript on the frontend. I focus on building practical products with clear architecture, reliable APIs, and interfaces that are easy to use and maintain.",
+    "I'm particularly interested in the engineering decisions behind an application: authentication and authorization, data validation, database design, API security, real-time communication, and maintainability as a system grows. My recent work includes JWT-based authentication services, a rate-limited B2B API with OpenAPI documentation, and a Node.js backend with Socket.IO for real-time employee device and activity tracking.",
   ],
 };
 
 export const skills = [
   {
     group: "Frontend",
-    items: ["JavaScript", "TypeScript", "React", "HTML", "CSS"],
+    items: ["JavaScript", "TypeScript", "React", "Next.js", "HTML", "CSS", "Tailwind CSS"],
   },
   {
     group: "Backend",
-    items: ["Node.js", "Express", "Laravel", "PHP"],
+    items: ["Node.js", "Express", "Laravel", "PHP", "REST APIs"],
   },
   {
     group: "Database",
-    items: ["MongoDB", "MySQL"],
+    items: ["MongoDB", "Mongoose", "MySQL", "SQLite"],
   },
   {
     group: "Tools & Engineering",
     items: [
       "Git",
-      "REST APIs",
       "JWT",
       "Zod",
       "Socket.IO",
       "Swagger / OpenAPI",
       "Vitest / Jest",
+      "Docker",
     ],
+  },
+];
+
+export const experience = [
+  {
+    period: "Current",
+    role: "Full-Stack Web Developer",
+    description:
+      "Building and maintaining web applications across React, Node.js and PHP, with a focus on APIs, authentication, databases, and production-ready frontend interfaces.",
   },
 ];
 
@@ -57,10 +67,10 @@ export const projects = [
     name: "B2B MTO",
     category: "Backend / API",
     description:
-      "A production-oriented Node.js backend for a B2B ordering platform, structured around auth, brands, categories, products and users modules. Each module is layered into controller, service, schema and model, sitting on a shared error-handling and response layer. Access is JWT-authenticated with refresh tokens, requests are validated with Zod, and the API is documented with Swagger/OpenAPI and covered by a Vitest and Supertest test suite.",
+      "A production-oriented Node.js backend for a B2B ordering platform, structured around authentication, brands, categories, products and users. The codebase uses layered modules, shared error handling, JWT access and refresh tokens, Zod validation, API documentation, security middleware, and automated tests.",
     highlights: [
       "JWT auth with refresh-token rotation",
-      "Zod request validation on every route",
+      "Zod request validation",
       "Helmet, CORS and rate limiting",
       "Swagger/OpenAPI documentation",
       "Vitest + Supertest test suite",
@@ -74,12 +84,12 @@ export const projects = [
     name: "sAuth",
     category: "Backend / Auth Service",
     description:
-      "A standalone authentication service built to be dropped into other Node.js projects. Handles registration, login and JWT access/refresh tokens with bcrypt password hashing, following the same controller → service → repository split as the larger backends. Passwords and request bodies are validated with Zod, errors flow through a shared error-handling layer, and the service ships with its own test runner.",
+      "A standalone authentication service designed to integrate with Node.js applications. It provides registration, login, access and refresh tokens, bcrypt password hashing, Zod validation, layered service architecture, centralized error handling, and automated testing.",
     highlights: [
       "JWT access + refresh token flow",
       "bcrypt password hashing",
       "Controller / service / repository layering",
-      "Zod validation, rate limiting middleware",
+      "Zod validation and rate limiting",
       "Custom test runner",
     ],
     tech: ["Node.js", "Express", "MongoDB", "JWT", "bcrypt", "Zod"],
@@ -91,7 +101,7 @@ export const projects = [
     name: "Employee Management System",
     category: "Backend / Real-Time",
     description:
-      "A Node.js/Express API for tracking employee devices and activity across departments. Separate modules handle employees, departments, devices, activity logs and events, all behind JWT-authenticated routes with Zod validation. Socket.IO pushes device and activity updates to connected clients in real time, which this API pairs with, so status changes don't rely on polling.",
+      "A Node.js/Express system for employee, device and activity tracking. Separate modules handle employees, departments, devices and activity data, while Socket.IO delivers real-time status and activity updates to connected clients.",
     highlights: [
       "Real-time updates via Socket.IO",
       "Employee, department, device and activity modules",
@@ -107,7 +117,7 @@ export const projects = [
     name: "Procrastinator's Roastmaster",
     category: "Browser Extension",
     description:
-      "A Manifest V3 Chrome extension that tracks time spent on distracting sites — YouTube, Twitter, Reddit, Netflix and others — and escalates from mild to harsh \"roasts\" once you cross your own thresholds. A background service worker tracks time per site, content scripts handle on-page overlays, and a popup shows daily stats. Thresholds, monitored sites and notification behaviour are all configurable, with data kept local to the browser.",
+      "A Manifest V3 Chrome extension that tracks time spent on distracting websites and escalates from mild to harsh roasts when configured thresholds are crossed. It uses a background service worker, content-script overlays, browser notifications, configurable rules, and local browser storage.",
     highlights: [
       "Manifest V3 service worker + content scripts",
       "Configurable thresholds and monitored sites",
@@ -123,5 +133,5 @@ export const projects = [
 
 export const contact = {
   heading: "Have something worth building?",
-  body: "I'm open to full-stack roles and freelance work — reach out by email or take a look at what I've been building on GitHub.",
+  body: "I'm open to full-stack roles and freelance work. If you're building a product, API, dashboard, or developer-focused tool, let's talk.",
 };
